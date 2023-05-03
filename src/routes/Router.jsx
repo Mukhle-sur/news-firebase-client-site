@@ -40,13 +40,13 @@ const router = createBrowserRouter([
       // {
       //   path: "/",
       //   element: <Category></Category>,
-      //   loader: ({ params }) => fetch("http://localhost:4000/news"),
+      //   loader: ({ params }) => fetch("https://my-frist-server-mukhle-sur.vercel.app/news"),
       // },
       {
         path: ":id",
         element: <Category></Category>,
         loader: ({ params }) =>
-          fetch(`http://localhost:4000/categories/${params.id}`),
+          fetch(`https://my-frist-server-mukhle-sur.vercel.app/categories/${params.id}`),
       },
     ],
   },
@@ -62,7 +62,7 @@ const router = createBrowserRouter([
           </PrivetRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:4000/news/${params.id}`),
+          fetch(`https://my-frist-server-mukhle-sur.vercel.app/news/${params.id}`),
       },
     ],
   },
